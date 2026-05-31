@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MinogameAction",
+			"Path": "C:\\Users\\takku\\Unreal_Engine\\MinogameAction\\Source\\MinogameAction.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MinogameActionEditor",
+			"Path": "C:\\Users\\takku\\Unreal_Engine\\MinogameAction\\Source\\MinogameActionEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

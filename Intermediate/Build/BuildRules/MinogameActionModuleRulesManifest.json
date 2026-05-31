@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\takku\\Unreal_Engine\\MinogameAction\\Source\\MinogameAction\\MinogameAction.Build.cs",
+		"C:\\Users\\takku\\Unreal_Engine\\MinogameAction\\Source\\MinogameAction.Target.cs",
+		"C:\\Users\\takku\\Unreal_Engine\\MinogameAction\\Source\\MinogameActionEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}
