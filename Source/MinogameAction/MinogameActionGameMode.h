@@ -13,6 +13,7 @@ class AMinogameActionGameMode : public AGameModeBase
 
 public:
 	AMinogameActionGameMode();
+
 };
 
 

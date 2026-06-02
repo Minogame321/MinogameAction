@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MINOGAMEACTION_Title_generated_h
 
 #define FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_19_SPARSE_DATA
-#define FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_19_RPC_WRAPPERS
-#define FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_19_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnStartButtonClicked);
+
+
+#define FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnStartButtonClicked);
+
+
 #define FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTitle(); \

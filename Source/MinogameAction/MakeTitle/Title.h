@@ -32,4 +32,8 @@ private:
 
 	UPROPERTY(meta = (BindWidget));
 	UTextBlock* m_pStartText;
+
+	UFUNCTION()
+	void OnStartButtonClicked();
+
 };

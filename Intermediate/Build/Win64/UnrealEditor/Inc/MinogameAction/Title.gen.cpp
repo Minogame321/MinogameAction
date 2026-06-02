@@ -16,8 +16,42 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 	UMG_API UClass* Z_Construct_UClass_UButton_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UTitle::execOnStartButtonClicked)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnStartButtonClicked();
+		P_NATIVE_END;
+	}
 	void UTitle::StaticRegisterNativesUTitle()
 	{
+		UClass* Class = UTitle::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnStartButtonClicked", &UTitle::execOnStartButtonClicked },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UTitle_OnStartButtonClicked_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTitle_OnStartButtonClicked_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "MakeTitle/Title.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UTitle_OnStartButtonClicked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTitle, nullptr, "OnStartButtonClicked", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UTitle_OnStartButtonClicked_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UTitle_OnStartButtonClicked_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UTitle_OnStartButtonClicked()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UTitle_OnStartButtonClicked_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UTitle);
 	UClass* Z_Construct_UClass_UTitle_NoRegister()
@@ -27,6 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 	struct Z_Construct_UClass_UTitle_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -45,6 +80,9 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 	UObject* (*const Z_Construct_UClass_UTitle_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UUserWidget,
 		(UObject* (*)())Z_Construct_UPackage__Script_MinogameAction,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UTitle_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UTitle_OnStartButtonClicked, "OnStartButtonClicked" }, // 126492650
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTitle_Statics::Class_MetaDataParams[] = {
@@ -81,11 +119,11 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UTitle_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UTitle_Statics::PropPointers),
 		0,
 		0x00B010A0u,
@@ -109,9 +147,9 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UTitle, UTitle::StaticClass, TEXT("UTitle"), &Z_Registration_Info_UClass_UTitle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTitle), 1503875664U) },
+		{ Z_Construct_UClass_UTitle, UTitle::StaticClass, TEXT("UTitle"), &Z_Registration_Info_UClass_UTitle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTitle), 2885873203U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_4003735723(TEXT("/Script/MinogameAction"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_4153125(TEXT("/Script/MinogameAction"),
 		Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -76,11 +76,13 @@
     <ClInclude Include="..\..\Source\MinogameAction\MakeTitle\TitleActor.h">
       <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\MinogameAction\MakeTitle\TitleGameMode.cpp">
-      <Filter>Source\MinogameAction\MakeTitle</Filter>
-    </ClCompile>
     <ClInclude Include="..\..\Source\MinogameAction\MakeTitle\TitleGameMode.h">
       <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\MinogameAction\MakeTitle\TitleGameMode.cpp">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
