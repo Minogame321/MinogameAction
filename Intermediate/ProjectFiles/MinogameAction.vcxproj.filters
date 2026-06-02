@@ -61,23 +61,26 @@
     <ClInclude Include="..\..\Source\MinogameAction\MinogameActionGameMode.h">
       <Filter>Source\MinogameAction</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\MinogameAction\Title.cpp">
-      <Filter>Source\MinogameAction</Filter>
+    <Filter Include="Source\MinogameAction\MakeTitle">
+      <UniqueIdentifier>{F189EC79-B526-3D05-8D11-78639B16637F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\MakeTitle\Title.cpp">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\MinogameAction\Title.h">
-      <Filter>Source\MinogameAction</Filter>
+    <ClInclude Include="..\..\Source\MinogameAction\MakeTitle\Title.h">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\MinogameAction\TitleActor.cpp">
-      <Filter>Source\MinogameAction</Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\MakeTitle\TitleActor.cpp">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\MinogameAction\TitleActor.h">
-      <Filter>Source\MinogameAction</Filter>
+    <ClInclude Include="..\..\Source\MinogameAction\MakeTitle\TitleActor.h">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\MinogameAction\TitleGameMode.cpp">
-      <Filter>Source\MinogameAction</Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\MakeTitle\TitleGameMode.cpp">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\MinogameAction\TitleGameMode.h">
-      <Filter>Source\MinogameAction</Filter>
+    <ClInclude Include="..\..\Source\MinogameAction\MakeTitle\TitleGameMode.h">
+      <Filter>Source\MinogameAction\MakeTitle</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

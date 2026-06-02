@@ -1,4 +1,4 @@
-C:\Users\takku\Unreal_Engine\MinogameAction\Source\MinogameAction\MakeTitle\TitleActor.cpp
+C:\Users\takku\Unreal_Engine\MinogameAction\Source\MinogameAction\TitleGameMode.cpp
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
@@ -281,8 +281,8 @@ C:\Users\takku\Unreal_Engine\MinogameAction\Source\MinogameAction\MakeTitle\Titl
 /FI"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\Definitions.MinogameAction.h"
 /Yu"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\MinogameActionEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\MinogameActionEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\TitleActor.cpp.obj"
-/sourceDependencies C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\TitleActor.cpp.json
+/Fo"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\TitleGameMode.cpp.lc.obj"
+/sourceDependencies"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\TitleGameMode.cpp.lc.json"
 /Zc:inline
 /nologo
 /Oi
