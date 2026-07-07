@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\testaction.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\minogameactioneditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\development\\minogameaction\\definitions.minogameaction.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\testaction.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\testaction.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

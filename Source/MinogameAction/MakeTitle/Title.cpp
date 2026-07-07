@@ -4,6 +4,7 @@
 #include "Title.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/LevelStreaming.h"
+#include "Input/Reply.h"
 
 void UTitle::NativeConstruct()
 {
@@ -17,7 +18,23 @@ void UTitle::NativeConstruct()
 	}
 }
 
+// スタートボタンが押された時に行う処理
 void UTitle::OnStartButtonClicked()
+{
+	TransfertoWorld();
+}
+
+// 任意の画面内クリックでも遷移
+FReply UTitle::NativeOnMouseButtonDown(
+	const FGeometry& InGeometry,
+	const FPointerEvent& InMouseEvent)
+{
+	TransfertoWorld();
+
+	return FReply::Handled();
+}
+
+void UTitle::TransfertoWorld()
 {
 	UGameplayStatics::OpenLevel(this, FName("World2"));
 

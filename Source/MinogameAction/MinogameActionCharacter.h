@@ -6,7 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MinogameActionCharacter.generated.h"
 
-UCLASS(config=Game)
+UCLASS(config = Game)
 class AMinogameActionCharacter : public ACharacter
 {
 	GENERATED_BODY()
@@ -22,7 +22,7 @@ public:
 	AMinogameActionCharacter();
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Input)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Input)
 	float TurnRateGamepad;
 
 protected:
@@ -33,14 +33,14 @@ protected:
 	/** Called for side to side input */
 	void MoveRight(float Value);
 
-	/** 
-	 * Called via input to turn at a given rate. 
+	/**
+	 * Called via input to turn at a given rate.
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void TurnAtRate(float Rate);
 
 	/**
-	 * Called via input to turn look up/down at a given rate. 
+	 * Called via input to turn look up/down at a given rate.
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void LookUpAtRate(float Rate);
@@ -62,4 +62,3 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
-

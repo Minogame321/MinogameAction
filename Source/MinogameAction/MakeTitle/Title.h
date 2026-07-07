@@ -23,7 +23,10 @@ public:
 
 private:
 	void SetText() {m_pStartText->SetText(FText::FromString(TEXT("START")));};
-
+	virtual FReply NativeOnMouseButtonDown(
+		const FGeometry& InGeometry,
+		const FPointerEvent& InMouseEvent) override;
+	void TransfertoWorld();
 
 private:
 

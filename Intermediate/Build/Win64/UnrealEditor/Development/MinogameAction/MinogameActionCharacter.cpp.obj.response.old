@@ -1,18 +1,16 @@
 C:\Users\takku\Unreal_Engine\MinogameAction\Source\MinogameAction\MinogameActionCharacter.cpp
 /I .
-/I C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Inc\MinogameAction
-/I C:\Users\takku\Unreal_Engine\MinogameAction\Source
-/I Runtime
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
+/I Runtime
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -253,6 +251,8 @@ C:\Users\takku\Unreal_Engine\MinogameAction\Source\MinogameAction\MinogameAction
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
+/I C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Inc\MinogameAction
+/I C:\Users\takku\Unreal_Engine\MinogameAction\Source
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\MRMesh
@@ -277,10 +277,7 @@ C:\Users\takku\Unreal_Engine\MinogameAction\Source\MinogameAction\MinogameAction
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\MinogameActionEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\Definitions.MinogameAction.h"
-/Yu"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\MinogameActionEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\MinogameActionEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/FI"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\Definitions.h"
 /Fo"C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\MinogameActionCharacter.cpp.obj"
 /sourceDependencies C:\Users\takku\Unreal_Engine\MinogameAction\Intermediate\Build\Win64\UnrealEditor\Development\MinogameAction\MinogameActionCharacter.cpp.json
 /Zc:inline
