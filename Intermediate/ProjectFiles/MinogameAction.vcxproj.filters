@@ -40,6 +40,15 @@
     <Filter Include="Source\MinogameAction">
       <UniqueIdentifier>{E9642FDA-E4CB-390C-BDCE-E4212068104E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\CmnProgressBar.cpp">
+      <Filter>Source\MinogameAction</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MinogameAction\CmnProgressBar.h">
+      <Filter>Source\MinogameAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MinogameAction\Debug.h">
+      <Filter>Source\MinogameAction</Filter>
+    </ClInclude>
     <None Include="..\..\Source\MinogameAction\MinogameAction.Build.cs">
       <Filter>Source\MinogameAction</Filter>
     </None>
@@ -71,9 +80,6 @@
       <Filter>Source\MinogameAction</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\MinogameAction\WarriorBaseCharacter.h">
-      <Filter>Source\MinogameAction</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\MinogameAction\Debug.h">
       <Filter>Source\MinogameAction</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\MinogameAction\WarriorHeroCharacter.cpp">

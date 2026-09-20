@@ -36,6 +36,6 @@ FReply UTitle::NativeOnMouseButtonDown(
 
 void UTitle::TransfertoWorld()
 {
-	//UGameplayStatics::OpenLevel(this, FName("World2"));
+	UGameplayStatics::OpenLevel(this, FName("World2"));
 
 }
