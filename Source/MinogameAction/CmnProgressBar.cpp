@@ -3,11 +3,43 @@
 
 #include "CmnProgressBar.h"
 #include "Components/ProgressBar.h"
+#include "Components/Image.h"
+#include "Components/Overlay.h"
+#include "Components/OverlaySlot.h"
+#include "Components/CanvasPanelSlot.h"
+#include "Components/SlateWrapperTypes.h"
 
 void UCmnProgressBar::NativeConstruct()
 {
+    Super::NativeConstruct();
+
 
 }
+
+void  UCmnProgressBar::Setup()
+{
+    const float Progress = 0.7f;
+
+    if (!m_pImage1)
+    {
+        return;
+    }
+
+    UOverlaySlot* OverlaySlot = Cast<UOverlaySlot>(m_pImage1->Slot);
+    if (!OverlaySlot)
+    {
+        return;
+    }
+
+    // Imageの左端をProgress位置に合わせる
+    OverlaySlot->SetHorizontalAlignment(HAlign_Left);
+    OverlaySlot->SetVerticalAlignment(VAlign_Center);
+
+    const FVector2D Size = m_pProgressBar->GetCachedGeometry().GetLocalSize();
+
+    m_pImage1->SetRenderTranslation(FVector2D(Size.X * Progress, 0.0f));
+}
+
 
 FReply UCmnProgressBar::NativeOnMouseButtonDown(
     const FGeometry& InGeometry,

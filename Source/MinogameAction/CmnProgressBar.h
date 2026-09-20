@@ -7,6 +7,8 @@
 #include "CmnProgressBar.generated.h"
 
 class UProgressBar;
+class UImage;
+class UOverlay;
 
 /**
  * 
@@ -15,7 +17,10 @@ UCLASS()
 class MINOGAMEACTION_API UCmnProgressBar : public UUserWidget
 {
 	GENERATED_BODY()
+
+public:
 	virtual void NativeConstruct() override;
+	void    Setup();
 
 	virtual FReply NativeOnMouseButtonDown(
 		const FGeometry& InGeometry,
@@ -23,4 +28,14 @@ class MINOGAMEACTION_API UCmnProgressBar : public UUserWidget
 	
 	UPROPERTY(meta = (BindWidget));
 	UProgressBar* m_pProgressBar;
+
+	UPROPERTY(meta = (BindWidget));
+
+	UOverlay* m_pOverlay;
+
+	UPROPERTY(meta = (BindWidget));
+	UImage* m_pImage1;
+
+	UPROPERTY(meta = (BindWidget));
+	UImage* m_pImage2;
 };

@@ -14,6 +14,8 @@ void EmptyLinkFunctionForGeneratedCodeCmnProgressBar() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_MinogameAction();
 	UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UOverlay_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UImage_NoRegister();
 // End Cross Module References
 	void UCmnProgressBar::StaticRegisterNativesUCmnProgressBar()
 	{
@@ -33,6 +35,18 @@ void EmptyLinkFunctionForGeneratedCodeCmnProgressBar() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pProgressBar_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pProgressBar;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pOverlay_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pOverlay;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pImage1_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pImage1;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pImage2_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pImage2;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -55,9 +69,36 @@ void EmptyLinkFunctionForGeneratedCodeCmnProgressBar() {}
 		{ "ModuleRelativePath", "CmnProgressBar.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar = { "m_pProgressBar", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCmnProgressBar, m_pProgressBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar = { "m_pProgressBar", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCmnProgressBar, m_pProgressBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pOverlay_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "CmnProgressBar.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pOverlay = { "m_pOverlay", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCmnProgressBar, m_pOverlay), Z_Construct_UClass_UOverlay_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pOverlay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pOverlay_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage1_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "CmnProgressBar.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage1 = { "m_pImage1", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCmnProgressBar, m_pImage1), Z_Construct_UClass_UImage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage1_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage2_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "CmnProgressBar.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage2 = { "m_pImage2", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCmnProgressBar, m_pImage2), Z_Construct_UClass_UImage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage2_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCmnProgressBar_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pProgressBar,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pOverlay,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage1,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCmnProgressBar_Statics::NewProp_m_pImage2,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UCmnProgressBar_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UCmnProgressBar>::IsAbstract,
@@ -95,9 +136,9 @@ void EmptyLinkFunctionForGeneratedCodeCmnProgressBar() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_CmnProgressBar_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UCmnProgressBar, UCmnProgressBar::StaticClass, TEXT("UCmnProgressBar"), &Z_Registration_Info_UClass_UCmnProgressBar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCmnProgressBar), 2115740053U) },
+		{ Z_Construct_UClass_UCmnProgressBar, UCmnProgressBar::StaticClass, TEXT("UCmnProgressBar"), &Z_Registration_Info_UClass_UCmnProgressBar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCmnProgressBar), 1201788877U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_CmnProgressBar_h_2445745684(TEXT("/Script/MinogameAction"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_CmnProgressBar_h_2886724736(TEXT("/Script/MinogameAction"),
 		Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_CmnProgressBar_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_CmnProgressBar_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

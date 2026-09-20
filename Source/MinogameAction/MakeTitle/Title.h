@@ -8,6 +8,7 @@
 #include "Components/TextBlock.h"
 #include "Title.generated.h"
 
+class UCmnProgressBar;
 
 
 /**
@@ -35,6 +36,11 @@ private:
 
 	UPROPERTY(meta = (BindWidget));
 	UTextBlock* m_pStartText;
+
+	UPROPERTY(meta = (BindWidget));
+	UCmnProgressBar* m_pProgressBar;
+
+	
 
 	UFUNCTION()
 	void OnStartButtonClicked();

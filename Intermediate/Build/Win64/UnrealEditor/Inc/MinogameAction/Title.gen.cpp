@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 	UPackage* Z_Construct_UPackage__Script_MinogameAction();
 	UMG_API UClass* Z_Construct_UClass_UButton_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
+	MINOGAMEACTION_API UClass* Z_Construct_UClass_UCmnProgressBar_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UTitle::execOnStartButtonClicked)
 	{
@@ -73,6 +74,10 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pStartText_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pStartText;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pProgressBar_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pProgressBar;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -107,9 +112,18 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartText = { "m_pStartText", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTitle, m_pStartText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartText_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartText_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTitle_Statics::NewProp_m_pProgressBar_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "MakeTitle/Title.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTitle_Statics::NewProp_m_pProgressBar = { "m_pProgressBar", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTitle, m_pProgressBar), Z_Construct_UClass_UCmnProgressBar_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UTitle_Statics::NewProp_m_pProgressBar_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTitle_Statics::NewProp_m_pProgressBar_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTitle_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartButton,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartText,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTitle_Statics::NewProp_m_pProgressBar,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UTitle_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UTitle>::IsAbstract,
@@ -147,9 +161,9 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UTitle, UTitle::StaticClass, TEXT("UTitle"), &Z_Registration_Info_UClass_UTitle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTitle), 2885873203U) },
+		{ Z_Construct_UClass_UTitle, UTitle::StaticClass, TEXT("UTitle"), &Z_Registration_Info_UClass_UTitle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTitle), 4069199028U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_4153125(TEXT("/Script/MinogameAction"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_1081530858(TEXT("/Script/MinogameAction"),
 		Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

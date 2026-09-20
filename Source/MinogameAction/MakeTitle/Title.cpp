@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Engine/LevelStreaming.h"
 #include "Input/Reply.h"
+#include "../CmnProgressBar.h"
 
 void UTitle::NativeConstruct()
 {
@@ -22,6 +23,11 @@ void UTitle::NativeConstruct()
 void UTitle::OnStartButtonClicked()
 {
 	TransfertoWorld();
+
+	if(m_pProgressBar){
+		m_pProgressBar->Setup();
+	}
+	
 }
 
 // 任意の画面内クリックでも遷移
