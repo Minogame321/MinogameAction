@@ -1,0 +1,9 @@
+お疲れ様です。SM_Floorの側面部分に、
+
+/Script/Engine.Material'/Game/Environment/Materials/M_FloorSide.M_FloorSide'
+
+を。床面部分に、
+
+/Script/Engine.Material'/Game/Environment/Materials/M_Floor.M_Floor'
+
+の割り当てをお願いいたします。
