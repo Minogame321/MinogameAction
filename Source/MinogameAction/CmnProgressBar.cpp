@@ -28,7 +28,7 @@ void  UCmnProgressBar::Setup()
     UOverlaySlot* OverlaySlot = Cast<UOverlaySlot>(m_pImage1->Slot);
     if (!OverlaySlot)
     {
-        return;
+        return; 
     }
 
     // Imageの左端をProgress位置に合わせる
