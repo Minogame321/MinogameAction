@@ -19,7 +19,8 @@ public:
 	GENERATED_BODY()
 
 	void BeginPlay();
-	
+	void CreateTitle();
+
 private:
 	TSubclassOf<UTitle> TitleWidgetClass;
 };

@@ -14,6 +14,11 @@ ATitleGameMode::ATitleGameMode()
 
 void ATitleGameMode::BeginPlay()
 {
+    CreateTitle();
+}
+
+void ATitleGameMode::CreateTitle()
+{
     APlayerController* PC =
         GetWorld()->GetFirstPlayerController();
 
@@ -24,7 +29,6 @@ void ATitleGameMode::BeginPlay()
 
     PC->bShowMouseCursor = true;
 
-   
 
     // タイトル画面
     UTitle* TitleWidget =
