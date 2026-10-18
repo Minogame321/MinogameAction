@@ -165,7 +165,9 @@
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\umg\\public\\components\\textwidgettypes.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\textwidgettypes.generated.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\textblock.generated.h",
-            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\title.generated.h"
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\title.generated.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\playercontroller\\baseplayercontroller.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\baseplayercontroller.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

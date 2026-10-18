@@ -5,11 +5,13 @@
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
 #include "Title.h"
+#include "../PlayerController/BasePlayerController.h"
 
 ATitleGameMode::ATitleGameMode()
 {
     static ConstructorHelpers::FClassFinder<UUserWidget> TitleBP(TEXT("/Game/UI/Title"));
     TitleWidgetClass = TitleBP.Class;
+    PlayerControllerClass = ABasePlayerController::StaticClass();
 }
 
 void ATitleGameMode::BeginPlay()

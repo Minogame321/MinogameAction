@@ -40,12 +40,6 @@
     <Filter Include="Source\MinogameAction">
       <UniqueIdentifier>{E9642FDA-E4CB-390C-BDCE-E4212068104E}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\MinogameAction\CmnProgressBar.cpp">
-      <Filter>Source\MinogameAction</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\MinogameAction\CmnProgressBar.h">
-      <Filter>Source\MinogameAction</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\MinogameAction\Debug.h">
       <Filter>Source\MinogameAction</Filter>
     </ClInclude>
@@ -114,6 +108,41 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\MinogameAction\MakeTitle\TitleGameMode.h">
       <Filter>Source\MinogameAction\MakeTitle</Filter>
+    </ClInclude>
+    <Filter Include="Source\MinogameAction\Manager">
+      <UniqueIdentifier>{283FDC8E-3F6E-303C-81D2-AC0E8E9EAE25}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\Manager\UICloseManager.cpp">
+      <Filter>Source\MinogameAction\Manager</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MinogameAction\Manager\UICloseManager.h">
+      <Filter>Source\MinogameAction\Manager</Filter>
+    </ClInclude>
+    <Filter Include="Source\MinogameAction\PlayerController">
+      <UniqueIdentifier>{ECAA562D-F46F-3397-8AA3-70CB55AEE233}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\PlayerController\BasePlayerController.cpp">
+      <Filter>Source\MinogameAction\PlayerController</Filter>
+    </ClCompile>
+    <Filter Include="Source\MinogameAction\UI">
+      <UniqueIdentifier>{BE72CC54-48F9-30A8-9A31-1268F1D65599}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MinogameAction\UI\BaseUIWidget.cpp">
+      <Filter>Source\MinogameAction\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MinogameAction\UI\BaseUIWidget.h">
+      <Filter>Source\MinogameAction\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MinogameAction\UI\CmnProgressBar.cpp">
+      <Filter>Source\MinogameAction\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MinogameAction\UI\CmnProgressBar.h">
+      <Filter>Source\MinogameAction\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\MinogameAction\PlayerController\BasePlayerController.h">
+      <Filter>Source\MinogameAction\PlayerController</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

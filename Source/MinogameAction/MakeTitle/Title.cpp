@@ -1,47 +1,166 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Title.h"
-#include "Kismet/GameplayStatics.h"
-#include "Engine/LevelStreaming.h"
-#include "Input/Reply.h"
-#include "../CmnProgressBar.h"
 
+#include "Kismet/GameplayStatics.h"
+#include "UObject/ConstructorHelpers.h"
+#include "InputCoreTypes.h"
+
+#include "../UI/BaseUIWidget.h"
+
+
+// コンストラクタ
+UTitle::UTitle(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer)
+{
+    // Widget Blueprint のクラスを取得
+    static ConstructorHelpers::FClassFinder<UBaseUIWidget> GenerateBP(
+        TEXT("/Game/UI/UIParts/NewWidgetBlueprint")
+    );
+
+    if (GenerateBP.Succeeded())
+    {
+        TestWidgetClass = GenerateBP.Class;
+    }
+    else
+    {
+        UE_LOG(
+            LogTemp,
+            Error,
+            TEXT("NewWidgetBlueprint の読み込みに失敗しました")
+        );
+    }
+}
+
+
+// Widget 構築時
 void UTitle::NativeConstruct()
 {
-	SetText();
+    Super::NativeConstruct();
 
-	if (m_pStartButton) {
-		m_pStartButton->OnClicked.AddDynamic(
-			this,
-			&UTitle::OnStartButtonClicked // ←実行したい関数名
-		);
-	}
+    // テキスト設定
+    SetText();
+
+    // ボタンイベント登録
+    if (m_pStartButton)
+    {
+        m_pStartButton->OnClicked.AddUniqueDynamic(
+            this,
+            &UTitle::OnStartButtonClicked
+        );
+    }
+    else
+    {
+        UE_LOG(
+            LogTemp,
+            Error,
+            TEXT("m_pStartButton が nullptr です。Widget Blueprint の名前を確認してください")
+        );
+    }
 }
 
-// スタートボタンが押された時に行う処理
+
+// スタートテキスト設定
+void UTitle::SetText()
+{
+    if (m_pStartText)
+    {
+        m_pStartText->SetText(
+            FText::FromString(TEXT("START"))
+        );
+    }
+    else
+    {
+        UE_LOG(
+            LogTemp,
+            Error,
+            TEXT("m_pStartText が nullptr です。Widget Blueprint の名前を確認してください")
+        );
+    }
+}
+
+
+// スタートボタンが押されたとき
 void UTitle::OnStartButtonClicked()
 {
-	TransfertoWorld();
-
-	if(m_pProgressBar){
-		m_pProgressBar->Setup();
-	}
-	
+    TransfertoWorld();
 }
 
-// 任意の画面内クリックでも遷移
-FReply UTitle::NativeOnMouseButtonDown(
-	const FGeometry& InGeometry,
-	const FPointerEvent& InMouseEvent)
+
+// A キーが押されたとき
+FReply UTitle::NativeOnKeyDown(
+    const FGeometry& InGeometry,
+    const FKeyEvent& InKeyEvent
+)
 {
-	TransfertoWorld();
+    if (InKeyEvent.GetKey() == EKeys::A)
+    {
+        APlayerController* PlayerController = GetOwningPlayer();
 
-	return FReply::Handled();
+        if (!PlayerController)
+        {
+            UE_LOG(
+                LogTemp,
+                Error,
+                TEXT("PlayerController が取得できません")
+            );
+
+            return FReply::Unhandled();
+        }
+
+        if (!TestWidgetClass)
+        {
+            UE_LOG(
+                LogTemp,
+                Error,
+                TEXT("TestWidgetClass が設定されていません")
+            );
+
+            return FReply::Unhandled();
+        }
+
+        UBaseUIWidget* TestWidget =
+            CreateWidget<UBaseUIWidget>(
+                PlayerController,
+                TestWidgetClass
+            );
+
+        if (TestWidget)
+        {
+            TestWidget->AddToViewport();
+            TestWidget->Setup();
+            return FReply::Handled();
+        }
+
+        UE_LOG(
+            LogTemp,
+            Error,
+            TEXT("Widget の生成に失敗しました")
+        );
+
+        return FReply::Unhandled();
+    }
+
+    return Super::NativeOnKeyDown(
+        InGeometry,
+        InKeyEvent
+    );
 }
 
+
+// 画面がクリックされたとき
+FReply UTitle::NativeOnMouseButtonDown(
+    const FGeometry& InGeometry,
+    const FPointerEvent& InMouseEvent
+)
+{
+    TransfertoWorld();
+
+    return FReply::Handled();
+}
+
+
+// ワールド遷移
 void UTitle::TransfertoWorld()
 {
-	//UGameplayStatics::OpenLevel(this, FName("World2"));
-
+    // 遷移先のレベル名に変更してください
+    // UGameplayStatics::OpenLevel(this, FName(TEXT("World2")));
 }

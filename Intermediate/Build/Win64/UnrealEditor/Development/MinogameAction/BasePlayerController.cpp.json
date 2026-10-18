@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\playercontroller\\baseplayercontroller.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\minogameactioneditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\development\\minogameaction\\definitions.minogameaction.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\playercontroller\\baseplayercontroller.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\baseplayercontroller.generated.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\manager\\uiclosemanager.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.37.32822\\include\\mutex",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.37.32822\\include\\__msvc_chrono.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.37.32822\\include\\ratio",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.37.32822\\include\\thread",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\process.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\corecrt_startup.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\math.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.37.32822\\include\\vcruntime_startup.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
