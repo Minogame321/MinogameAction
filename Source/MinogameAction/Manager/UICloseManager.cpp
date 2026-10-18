@@ -4,7 +4,7 @@
 
 void UICloseManager::AddUI(UBaseUIWidget* Widget)
 {
-	UIStack.Add(Widget);
+	UIStack.AddUnique(Widget);
 }
 
 void UICloseManager::CloseUI()

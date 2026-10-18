@@ -1,7 +1,10 @@
 #include "BaseUIWidget.h"
 #include "../Manager/UICloseManager.h"
 
-void UBaseUIWidget::Setup()
+void UBaseUIWidget::NativeConstruct()
 {
-	UI_CLOSE_MANAGER().AddUI(this);
+	if (bCanCloseRightClick()) {
+		UI_CLOSE_MANAGER().AddUI(this);
+	}
 }
+

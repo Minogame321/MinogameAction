@@ -7,7 +7,7 @@
 #include "Input/Reply.h"
 #include "Title.generated.h"
 
-class UBaseUIWidget;
+class UTestUIWidget;
 
 UCLASS()
 class MINOGAMEACTION_API UTitle : public UUserWidget
@@ -48,5 +48,5 @@ private:
 
     // 生成する Widget Blueprint のクラス
     UPROPERTY()
-    TSubclassOf<UBaseUIWidget> TestWidgetClass;
+    TSubclassOf<UTestUIWidget> TestWidgetClass;
 };

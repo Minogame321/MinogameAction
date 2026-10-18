@@ -144,5 +144,13 @@
     <ClInclude Include="..\..\Source\MinogameAction\PlayerController\BasePlayerController.h">
       <Filter>Source\MinogameAction\PlayerController</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\MinogameAction\UI\TestUIWidget.h">
+      <Filter>Source\MinogameAction\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\MinogameAction\UI\TestUIWidget.cpp">
+      <Filter>Source\MinogameAction\UI</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

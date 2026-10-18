@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 	UMG_API UClass* Z_Construct_UClass_UButton_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	MINOGAMEACTION_API UClass* Z_Construct_UClass_UBaseUIWidget_NoRegister();
+	MINOGAMEACTION_API UClass* Z_Construct_UClass_UTestUIWidget_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UTitle::execOnStartButtonClicked)
 	{
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 		{ "ToolTip", "\xe7\x94\x9f\xe6\x88\x90\xe3\x81\x99\xe3\x82\x8b Widget Blueprint \xe3\x81\xae\xe3\x82\xaf\xe3\x83\xa9\xe3\x82\xb9" },
 	};
 #endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UTitle_Statics::NewProp_TestWidgetClass = { "TestWidgetClass", nullptr, (EPropertyFlags)0x0044000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTitle, TestWidgetClass), Z_Construct_UClass_UBaseUIWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UTitle_Statics::NewProp_TestWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTitle_Statics::NewProp_TestWidgetClass_MetaData)) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UTitle_Statics::NewProp_TestWidgetClass = { "TestWidgetClass", nullptr, (EPropertyFlags)0x0044000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTitle, TestWidgetClass), Z_Construct_UClass_UTestUIWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UTitle_Statics::NewProp_TestWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTitle_Statics::NewProp_TestWidgetClass_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTitle_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartButton,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTitle_Statics::NewProp_m_pStartText,
@@ -164,9 +164,9 @@ void EmptyLinkFunctionForGeneratedCodeTitle() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UTitle, UTitle::StaticClass, TEXT("UTitle"), &Z_Registration_Info_UClass_UTitle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTitle), 902102654U) },
+		{ Z_Construct_UClass_UTitle, UTitle::StaticClass, TEXT("UTitle"), &Z_Registration_Info_UClass_UTitle, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTitle), 3907753666U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_3561872748(TEXT("/Script/MinogameAction"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_4223136850(TEXT("/Script/MinogameAction"),
 		Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MinogameAction_Source_MinogameAction_MakeTitle_Title_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

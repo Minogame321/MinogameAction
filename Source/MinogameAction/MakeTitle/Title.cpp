@@ -5,6 +5,8 @@
 #include "InputCoreTypes.h"
 
 #include "../UI/BaseUIWidget.h"
+#include "../UI/TestUIWidget.h"
+
 
 
 // コンストラクタ
@@ -117,8 +119,8 @@ FReply UTitle::NativeOnKeyDown(
             return FReply::Unhandled();
         }
 
-        UBaseUIWidget* TestWidget =
-            CreateWidget<UBaseUIWidget>(
+        UTestUIWidget* TestWidget =
+            CreateWidget<UTestUIWidget>(
                 PlayerController,
                 TestWidgetClass
             );
@@ -126,7 +128,6 @@ FReply UTitle::NativeOnKeyDown(
         if (TestWidget)
         {
             TestWidget->AddToViewport();
-            TestWidget->Setup();
             return FReply::Handled();
         }
 

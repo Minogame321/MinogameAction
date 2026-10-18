@@ -161,7 +161,9 @@
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystaticstypes.generated.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystatics.generated.h",
             "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\ui\\baseuiwidget.h",
-            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\baseuiwidget.generated.h"
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\baseuiwidget.generated.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\source\\minogameaction\\ui\\testuiwidget.h",
+            "c:\\users\\takku\\unreal_engine\\minogameaction\\intermediate\\build\\win64\\unrealeditor\\inc\\minogameaction\\testuiwidget.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

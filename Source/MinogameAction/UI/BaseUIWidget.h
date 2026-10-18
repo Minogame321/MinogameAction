@@ -10,8 +10,11 @@ class MINOGAMEACTION_API UBaseUIWidget : public UUserWidget
     GENERATED_BODY()
 
 public:
+    virtual void NativeConstruct() override;
     bool IsCanRightClickClose() { return CanRightClickClose; }
-    void Setup();
+
+protected:
+    virtual bool bCanCloseRightClick() { return false; };
 
 protected:
     bool CanRightClickClose = true;
